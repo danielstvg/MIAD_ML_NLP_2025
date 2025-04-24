@@ -4,7 +4,6 @@ import pandas as pd
 
 app = Flask(__name__)
 
-# Cargar modelo
 with open('modelo_ensemble_xgb.pkl', 'rb') as f:
     modelo = pickle.load(f)
 
