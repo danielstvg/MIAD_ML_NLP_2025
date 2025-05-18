@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Carga los objetos guardados
 vectorizer = joblib.load('vectorizer.pkl')                 # TF-IDF vectorizer
-model = joblib.load('modelo_rf_multilabel.pkl')            # Modelo Random Forest multilabel
+model = joblib.load('modelo_multilabel_generos_rf.pkl')    # Nuevo modelo Random Forest multilabel
 mlb = joblib.load('mlb_binarizer.pkl')                     # MultiLabelBinarizer
 
 @app.route('/')
